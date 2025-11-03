@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: car-t-cell-demo
+    env: docker
+    region: oregon
+    plan: starter
+    dockerfilePath: ./Demo/Dockerfile
+    dockerContext: ./
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
+      - key: PORT
+        value: 10000
+    healthCheckPath: /
+
