@@ -62,13 +62,20 @@ The web demo provides a visual interface to see the trained AI agent in action a
 
 1.  **Install Dependencies**:
     ```bash
+   git clone https://github.com/emms204/CarTCell.git
+    python -m venv venv 
+    .\venv\Scripts\activate
+    
+    cd CarTCell
     pip install -r requirements.txt
-    pip install -r Demo/requirements.txt
+    cd Demo
+    pip install -r requirements.txt
     ```
 
 2.  **Run the Web Server**:
     ```bash
-    python Demo/app.py
+    python app.py 
+    visit http://127.0.0.1:5000/ or http://localhost:5000/
     ```
 
 3.  Open a web browser and navigate to `http://127.0.0.1:5000`.
